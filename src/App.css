@@ -1,69 +1,41 @@
-/* App.css */
-body {
+* {
   margin: 0;
   padding: 0;
-  background-color: #000;
-  color: #fff;
+  box-sizing: border-box;
+}
+
+body {
   font-family: Arial, sans-serif;
+  background-color: #000;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
 }
 
 .game-container {
   position: relative;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   outline: none;
 }
 
-.score, .lives, .level {
+h1, h3 {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  margin: 0;
-  font-size: 18px;
+  top: 20px;
+  left: 20px;
   color: #fff;
+  font-size: 24px;
 }
 
-.lives {
-  top: 40px;
+h3 {
+  top: 50px;
 }
 
 .level {
-  top: 70px;
-}
-
-.rocket {
-  position: absolute;
-  width: 30px;
-  height: 50px;
-  background-color: #ff5722;
-  border-radius: 5px;
-}
-
-.bullet {
-  position: absolute;
-  width: 5px;
-  height: 10px;
-  background-color: #fff;
-  border-radius: 2px;
-}
-
-.asteroid {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  background-color: #757575;
-  border-radius: 50%;
-  box-shadow: 0 0 10px #888;
-}
-
-.power-up {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  background-color: #4caf50;
-  border-radius: 50%;
-  box-shadow: 0 0 10px #4caf50;
+  top: 80px;
 }
 
 .game-over {
@@ -72,24 +44,54 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-}
-
-.game-over h2 {
   font-size: 36px;
-  margin-bottom: 20px;
-  color: #f44336;
-}
-
-.game-over button {
-  font-size: 16px;
-  padding: 10px 20px;
-  background-color: #ff5722;
   color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
 }
 
-.game-over button:hover {
-  background-color: #e64a19;
+button {
+  background-color: #ff6347;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #ff4500;
+}
+
+.rocket {
+  position: absolute;
+  width: 60px;
+  height: 80px;
+  background-image: url('/images/rocket.png');
+  background-size: cover;
+  transition: all 0.1s;
+}
+
+.bullet {
+  position: absolute;
+  width: 10px;
+  height: 20px;
+  background-image: url('/images/bullet.png');
+  background-size: cover;
+}
+
+.asteroid {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-image: url('/images/asteroid.png');
+  background-size: cover;
+}
+
+.power-up {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-image: url('/images/powerup.png');
+  background-size: cover;
 }
