@@ -1,0 +1,23 @@
+/* index.css */
+
+/* Estilo global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000; /* Fundo do jogo */
+  color: #fff;
+  overflow: hidden; /* Impede a rolagem */
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

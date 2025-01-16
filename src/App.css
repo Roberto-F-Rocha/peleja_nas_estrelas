@@ -1,0 +1,95 @@
+/* App.css */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+.game-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  outline: none;
+}
+
+.score, .lives, .level {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  margin: 0;
+  font-size: 18px;
+  color: #fff;
+}
+
+.lives {
+  top: 40px;
+}
+
+.level {
+  top: 70px;
+}
+
+.rocket {
+  position: absolute;
+  width: 30px;
+  height: 50px;
+  background-color: #ff5722;
+  border-radius: 5px;
+}
+
+.bullet {
+  position: absolute;
+  width: 5px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.asteroid {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #757575;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #888;
+}
+
+.power-up {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #4caf50;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #4caf50;
+}
+
+.game-over {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.game-over h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #f44336;
+}
+
+.game-over button {
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #ff5722;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.game-over button:hover {
+  background-color: #e64a19;
+}
